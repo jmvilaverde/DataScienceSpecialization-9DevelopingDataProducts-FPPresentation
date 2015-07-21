@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Body Mass Index App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Body Mass Index App">
+  <meta name="author" content="jmvilaverde">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Body Mass Index App</h1>
+    <h2>Developing Data Products - Final Project Presentation</h2>
+    <p>jmvilaverde<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Intro to BMI App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>This application allows the user to calculate Body Mass Index.</p></li>
+<li><p>Link to application: <a href="https://jmvilaverde.shinyapps.io/DSS_Developing_Data_Products_Final_Project_BMI_Calculator">BMI App</a></p></li>
+</ul>
+
+<div style='text-align: center;'>
+    <img height='450' src='assets/img/App.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Interface Results</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p>1.Input Panel:</p>
+
+<ul>
+<li>Your name: Name of the user.</li>
+<li>Your height: height of the user.</li>
+<li>Your weight: weight of the user.</li>
+<li>Submit button: executes calculation and refresh application.</li>
+<li>Instructions: Tab with instructions to use and configure app.</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p>2.Tab panel BMI Results</p>
+
+<ul>
+<li>Your height: height of the user.</li>
+<li>Your weight: weight of the user.</li>
+<li>Your BMI: Body Mass Index of the user.</li>
+<li>Feedback: Feedback about the BMI of the user.</li>
+<li>Plot: Plot Height vs.Weight that shows user BMI and limits.</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Interface Config</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>3.Tab panel Config</p>
+
+<ul>
+<li>Lower limit: value considered as lower limit for healthy BMI. As default 18.5</li>
+<li>Upper limit: value considered as upper limit for healthy BMI. As default 25</li>
+<li>Obesisty limit: value considered as limit for obesity BMI. As default 30</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>BMI Formula</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The formula used to calculate the BMI is: \(BMI = \frac{weight}{height^2}\)</p>
+
+<p>Example:</p>
+
+<pre><code class="r">#Set weight
+weight &lt;- 84.3
+
+#Set height
+height &lt;- 1.87
+
+#Calculate BMI
+BMI &lt;- round(weight/(height^2),2)
+
+#Print BMI result
+print(BMI)
+</code></pre>
+
+<pre><code>## [1] 24.11
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Intro to BMI App'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Interface Results'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Interface Config'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='BMI Formula'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

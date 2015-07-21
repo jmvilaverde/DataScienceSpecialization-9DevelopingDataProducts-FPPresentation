@@ -1,0 +1,16 @@
+{
+    "contents" : "---\ntitle       : Body Mass Index App\nsubtitle    : Developing Data Products - Final Project Presentation\nauthor      : jmvilaverde\njob         : \nframework   : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : tomorrow      # \nwidgets     : [mathjax]            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n## Intro to BMI App\n\n* This application allows the user to calculate Body Mass Index.\n\n* Link to application: [BMI App](https://jmvilaverde.shinyapps.io/DSS_Developing_Data_Products_Final_Project_BMI_Calculator)\n\n<div style='text-align: center;'>\n    <img height='450' src='assets/img/App.png' />\n</div>\n\n--- .class &twocol #id &twocol\n\n## Interface Results\n\n*** =left\n1.Input Panel:\n\n* Your name: Name of the user.\n* Your height: height of the user.\n* Your weight: weight of the user.\n* Submit button: executes calculation and refresh application.\n* Instructions: Tab with instructions to use and configure app.\n\n*** =right\n2.Tab panel BMI Results\n\n* Your height: height of the user.\n* Your weight: weight of the user.\n* Your BMI: Body Mass Index of the user.\n* Feedback: Feedback about the BMI of the user.\n* Plot: Plot Height vs.Weight that shows user BMI and limits.\n\n--- .class #id \n\n## Interface Config\n\n3.Tab panel Config\n\n* Lower limit: value considered as lower limit for healthy BMI. As default 18.5\n* Upper limit: value considered as upper limit for healthy BMI. As default 25\n* Obesisty limit: value considered as limit for obesity BMI. As default 30\n\n--- .class #id \n\n## BMI Formula\n\nThe formula used to calculate the BMI is: $BMI = \\frac{weight}{height^2}$\n\nExample:\n```{r example, echo=TRUE, eval=TRUE}\n#Set weight\nweight <- 84.3\n\n#Set height\nheight <- 1.87\n\n#Calculate BMI\nBMI <- round(weight/(height^2),2)\n\n#Print BMI result\nprint(BMI)\n```\n\n\n\n",
+    "created" : 1437482150824.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1175741694",
+    "id" : "35C7EC4",
+    "lastKnownWriteTime" : 1437489920,
+    "path" : "D:/Privado/repos/9.DevelopingDataProducts/Presentation/DevelopingDataProducts-FPPresentation/index.Rmd",
+    "project_path" : "DevelopingDataProducts-FPPresentation/index.Rmd",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}
